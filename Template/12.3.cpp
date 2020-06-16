@@ -7,10 +7,10 @@ void bubble(T *list, int listsize)
     do
     {
         changed = false;
-        for (int j = 0; j < listsize; j++)
+        for (int j = 0; j < listsize - 1; j++)
             if (list[j] > list[j + 1])
             {
-                T temp = list[j];
+                T temp = list[j + 1];
                 list[j + 1] = list[j];
                 list[j] = temp;
                 changed = true;
